@@ -8,6 +8,12 @@ document.addEventListener('keydown', event => {
   }
 })
 
+document.addEventListener('touchstart', event => {
+  event.preventDefault()
+  event.target
+  setRandomColors()
+})
+
 // processing clicks
 document.addEventListener('click', event => {
   const type = event.target.dataset.type
